@@ -16,11 +16,11 @@ collections:
     files:
       - label: 'Home'
         name: 'home'
-        file: 'data/pages/home.yml'
+        file: 'data/pages/home.json'
         fields:
           - { label: Title, name: title, widget: string }
       - label: 'About '
         name: 'about'
-        file: 'data/pages/about.yml'
+        file: 'data/pages/about.json'
         fields:
           - { label: Title, name: title, widget: string }
