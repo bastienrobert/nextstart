@@ -1,0 +1,11 @@
+.Products {
+  .list {
+    margin-top: 50px;
+    margin-left: 20px;
+    list-style: disc inside;
+  }
+}
+
+.wrapper {
+  composes: wrapper from global;
+}
