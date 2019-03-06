@@ -1,0 +1,26 @@
+backend:
+  name: github
+  # name: git-gateway
+  repo: bastienrobert/nextstart
+  branch: cms
+  # accept_roles:
+  #   - admin
+  #   - editor
+
+media_folder: '/static/uploads'
+public_folder: '/uploads'
+
+collections:
+  - label: 'Pages'
+    name: 'pages'
+    files:
+      - label: 'Home'
+        name: 'home'
+        file: 'data/pages/home.yml'
+        fields:
+          - { label: Title, name: title, widget: string }
+      - label: 'About '
+        name: 'about'
+        file: 'data/pages/about.yml'
+        fields:
+          - { label: Title, name: title, widget: string }

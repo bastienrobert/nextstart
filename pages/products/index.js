@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Head from 'next/head'
-import store from 'data/store'
+import store from 'store'
 
 import Typo from 'components/typo'
 

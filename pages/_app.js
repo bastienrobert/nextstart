@@ -2,14 +2,14 @@ import React from 'react'
 import App, { Container } from 'next/app'
 
 import { Provider } from 'react-redux'
-import store from 'data/store'
+import store from 'store'
 
 import Header from 'components/shared/Header'
 
 import 'reset-css'
 import './styles.scss'
 
-export default class RudiGernreichby extends App {
+export default class NextStart extends App {
   static async getInitialProps({ Component, ctx }) {
     return {
       pageProps: Component.getInitialProps
