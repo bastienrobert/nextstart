@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Head from 'next/head'
+import data from 'data/pages/home.json'
 
 import Typo from 'components/typo'
 
@@ -14,7 +15,7 @@ export default class Home extends Component {
         </Head>
 
         <Typo title>
-          <h1>Home</h1>
+          <h1>{data.title}</h1>
         </Typo>
         <div className={css.wrapper}>
           <Typo text>
