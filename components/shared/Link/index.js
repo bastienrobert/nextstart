@@ -5,7 +5,6 @@ import css from './styles.scss'
 
 export default function Link({
   href,
-  params,
   external,
   className,
   children,
@@ -14,9 +13,7 @@ export default function Link({
   const componentStyle = classnames(css.Link, className)
 
   return (
-    <NextLink
-      prefetch={prefetch}
-      href={params ? { pathname: href, query: { ...params } } : href}>
+    <NextLink prefetch={prefetch} href={href}>
       <a
         className={componentStyle}
         target={external ? '_blank' : null}
