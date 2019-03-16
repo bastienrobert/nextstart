@@ -13,3 +13,9 @@ Kickstart for NextJS projects.
 - Shopify API test
 - Netlify CMS **(PREVIEW UNAVAILABLE FOR NOW)**
 - Export
+- Server and URL slugs
+- Router events for loading bar
+
+## Working on
+
+- PageTransitions (based on [next-page-transitions](https://github.com/illinois/next-page-transitions)` but with GSAP and external TransitionControllers based on (my) **Houdini** 🧙‍♂️) 🔜 [dev here](https://github.com/bastienrobert/nextstart/tree/features/page-transitions)

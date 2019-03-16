@@ -3,6 +3,7 @@ import Head from 'next/head'
 import store from 'store'
 
 import Typo from 'components/typo'
+import Link from 'components/shared/Link'
 
 import css from './styles.scss'
 
@@ -30,7 +31,9 @@ export default class Products extends Component {
           <ul className={css.list}>
             {products.map((product, i) => (
               <Typo text key={`product-${i}`}>
-                <li>{product.title}</li>
+                <Link href={`/products/${product.handle}`}>
+                  <li>{product.title}</li>
+                </Link>
               </Typo>
             ))}
           </ul>
