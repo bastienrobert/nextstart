@@ -1,11 +1,5 @@
-import Client from 'shopify-buy'
+import { STORE_CLIENT } from 'utils/config'
 import 'isomorphic-unfetch'
-import { STORE_ENDPOINT, STORE_API_KEY } from 'utils/config'
-
-const client = Client.buildClient({
-  domain: STORE_ENDPOINT,
-  storefrontAccessToken: STORE_API_KEY
-})
 
 const products = {
   state: [],
@@ -17,7 +11,7 @@ const products = {
   effects: dispatch => ({
     async fetchProducts(payload, rootState) {
       if (rootState.products.length > 0) return
-      await client.product.fetchAll().then(products => {
+      await STORE_CLIENT.product.fetchAll().then(products => {
         dispatch.products.receiveProducts(products)
       })
     }
