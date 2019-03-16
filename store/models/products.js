@@ -16,7 +16,7 @@ const products = {
   },
   effects: dispatch => ({
     async fetchProducts(payload, rootState) {
-      // console.log('test')
+      if (rootState.products.length > 0) return
       await client.product.fetchAll().then(products => {
         dispatch.products.receiveProducts(products)
       })
