@@ -9,7 +9,7 @@ const handle = app.getRequestHandler()
 app.prepare().then(() => {
   const server = express()
 
-  server.use(express.static('static'))
+  server.use('/static', express.static('static'))
 
   server.get('/products/:slug', (req, res) => {
     return app.render(req, res, '/product', { slug: req.params.slug })

@@ -7,10 +7,8 @@ import Typo from 'components/typo'
 import css from './styles.scss'
 
 export default class Products extends Component {
-  static async getInitialProps({ req, res }) {
-    const {
-      params: { slug }
-    } = req
+  static async getInitialProps({ query }) {
+    const { slug } = query
     const { dispatch, getState } = store
     // Fetch products
     await dispatch.products.fetchProducts()

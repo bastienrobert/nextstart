@@ -3,6 +3,8 @@ const path = require('path')
 const withSass = require('@zeit/next-sass')
 const withCss = require('@zeit/next-css')
 
+const exportPathMap = require('./bin/exportPathMap')
+
 module.exports = withCss(
   withSass({
     webpack(config, options) {
@@ -23,6 +25,7 @@ module.exports = withCss(
     sassLoaderOptions: {
       includePaths: ['./'],
       data: '@import "utils/config.scss";'
-    }
+    },
+    exportPathMap
   })
 )
