@@ -19,3 +19,7 @@ Kickstart for NextJS projects.
 ## Working on
 
 - PageTransitions (based on [next-page-transitions](https://github.com/illinois/next-page-transitions) but with GSAP and external TransitionControllers based on (my) `Houdini` 🧙‍♂️) 🔜 [dev here](https://github.com/bastienrobert/nextstart/tree/feature/page-transitions)
+
+## Woops
+
+- Don't forget to upgrade to `next@8.0.4`, currently we're on `8.0.4-canary.11` to fix links issues
