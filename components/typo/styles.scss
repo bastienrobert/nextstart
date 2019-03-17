@@ -22,3 +22,15 @@
   line-height: 1.5;
   color: $black;
 }
+
+.markdown {
+  @extend .text;
+
+  h1 {
+    @extend .title;
+  }
+
+  h2 {
+    @extend .subtitle;
+  }
+}

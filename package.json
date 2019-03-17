@@ -20,13 +20,13 @@
     "express": "^4.16.4",
     "gsap": "^2.1.2",
     "isomorphic-unfetch": "^3.0.0",
-    "netlify-cms": "^2.5.1",
     "next": "^8.0.4-canary.11",
     "node-sass": "^4.11.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-redux": "^6.0.1",
     "reset-css": "^4.0.1",
-    "shopify-buy": "^2.1.0"
+    "shopify-buy": "^2.1.0",
+    "snarkdown": "^1.2.2"
   }
 }

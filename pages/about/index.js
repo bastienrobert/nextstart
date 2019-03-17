@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Head from 'next/head'
+import data from 'data/pages/about.json'
 
 import Typo from 'components/typo'
 
@@ -10,7 +11,7 @@ export default class About extends Component {
     return (
       <div className={css.About}>
         <Head>
-          <title>About</title>
+          <title>{data.title}</title>
         </Head>
 
         <Typo title>
@@ -18,33 +19,7 @@ export default class About extends Component {
         </Typo>
         <div className={css.wrapper}>
           <div className={css.content}>
-            <section>
-              <Typo subtitle>
-                <h2>Hello, it's a test</h2>
-              </Typo>
-              <Typo text>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Voluptas vitae aspernatur dolorem natus.
-                </p>
-                <p>
-                  Tenetur natus iure sequi soluta, consequatur officiis mollitia
-                  corrupti, excepturi possimus magnam eum! Aliquid doloremque
-                  voluptas amet.
-                </p>
-              </Typo>
-            </section>
-            <section>
-              <Typo subtitle>
-                <h2>Pouet</h2>
-              </Typo>
-              <Typo text>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Voluptas vitae aspernatur dolorem natus.
-                </p>
-              </Typo>
-            </section>
+            <Typo markdown={data.content} />
           </div>
         </div>
       </div>

@@ -19,7 +19,7 @@ export default class Home extends Component {
         </Typo>
         <div className={css.wrapper}>
           <Typo text>
-            <p>Hello</p>
+            <p>{data.introduction}</p>
           </Typo>
         </div>
       </div>

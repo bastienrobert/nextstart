@@ -15,8 +15,10 @@ collections:
         file: 'data/pages/home.json'
         fields:
           - { label: Title, name: title, widget: string }
+          - { label: Introduction, name: introduction, widget: text }
       - label: 'About '
         name: 'about'
         file: 'data/pages/about.json'
         fields:
           - { label: Title, name: title, widget: string }
+          - { label: Content, name: content, widget: markdown }
