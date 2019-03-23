@@ -23,3 +23,4 @@ Kickstart for NextJS projects.
 ## Woops
 
 - Don't forget to upgrade to `next@8.0.4`, currently we're on `8.0.4-canary.11` to fix links issues
+- exportPathMap const should be in a global conf file

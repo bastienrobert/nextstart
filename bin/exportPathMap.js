@@ -1,8 +1,8 @@
 require('isomorphic-unfetch')
 const Client = require('shopify-buy')
 
-const STORE_ENDPOINT = 'bastienrobert.myshopify.com'
-const STORE_API_KEY = '44336ee4fd62f3b48691c95993a14d1b'
+const STORE_ENDPOINT = 'bastienrobert-dev.myshopify.com'
+const STORE_API_KEY = '512f355712b64edd1c738fee73af1214'
 
 const STORE_CLIENT = Client.buildClient({
   domain: STORE_ENDPOINT,
