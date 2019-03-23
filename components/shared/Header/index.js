@@ -23,7 +23,7 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link className={css.link} href="/static/admin">
+            <Link className={css.link} href="/admin">
               Admin
             </Link>
           </li>

@@ -5,8 +5,8 @@ import { connect } from 'react-redux'
 import css from './styles.scss'
 
 class PageLoader extends Component {
-  componentDidMount() {
-    import('gsap/TweenMax')
+  async componentDidMount() {
+    await import('gsap/TweenMax')
   }
 
   componentDidUpdate() {

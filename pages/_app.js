@@ -28,10 +28,11 @@ export default class NextStart extends App {
 
   render() {
     const { Component, pageProps } = this.props
+    const layoutShouldBeRendered = this.props.router.route !== '/admin'
 
     return (
       <Container>
-        <Header />
+        {layoutShouldBeRendered && <Header />}
         <Provider store={store}>
           <PageLoader />
           <Component {...pageProps} />

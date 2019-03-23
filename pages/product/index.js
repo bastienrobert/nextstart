@@ -3,6 +3,7 @@ import Head from 'next/head'
 import store from 'store'
 
 import Typo from 'components/typo'
+import Image from 'components/shared/Image'
 
 import css from './styles.scss'
 
@@ -45,14 +46,17 @@ export default class Products extends Component {
               dangerouslySetInnerHTML={{ __html: product.descriptionHtml }}
             />
           </Typo>
-          {product.images.map(img => (
-            <img
-              className={css.image}
-              alt={img.alt}
-              src={img.src}
-              key={img.id}
-            />
-          ))}
+          <div className={css.images}>
+            {product.images.map(img => (
+              <Image
+                className={css.image}
+                alt={img.alt}
+                src={img.src}
+                key={img.id}
+                lazy
+              />
+            ))}
+          </div>
         </div>
       </div>
     )

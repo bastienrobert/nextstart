@@ -19,7 +19,8 @@ module.exports = async () => {
   const static = {
     '/': { page: '/' },
     '/about': { page: '/about' },
-    '/products': { page: '/products' }
+    '/products': { page: '/products' },
+    '/admin': { page: '/admin' }
   }
 
   const dynamic = products
