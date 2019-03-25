@@ -11,7 +11,7 @@ export default class Admin extends Component {
       <>
         <Head>
           <link
-            href="static/admin/config.yml"
+            href="/static/admin/config.yml"
             type="text/yaml"
             rel="cms-config-url"
           />
